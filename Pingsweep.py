@@ -1,3 +1,20 @@
+'''
+Ping Sweep 1.0.0:
+
+A python code to demonstrate demonstrates a Ping Sweep built using Python 3.x
+Note: Ping Sweep is dangerous, so you are advised to not to use 
+     this script without permission
+'''
+
+__author__ = "Rishit Dagli"
+__copyright__ = ""
+__credits__ = ["Rishit Dagli"]
+__license__ = "Apache License 2.0"
+__version__ = "1.0.0"
+__maintainer__ = "Rishit Dagli"
+__email__ = "rishit.dagli@gmail.com"
+__status__ = "Development"
+
 import os
 import platform
 
@@ -19,6 +36,7 @@ elif (oper == "Linux"):
 else :
    ping1 = "ping -c 1 "
 t1 = datetime.now()
+
 print ("Scanning in Progress:")
 
 for ip in range(st1,en1):
@@ -32,6 +50,8 @@ for ip in range(st1,en1):
       if (line.count("TTL")):
          print (addr, "--> Live")
          
+
 t2 = datetime.now()
 total = t2 - t1
+
 print ("Scanning completed in: ",total)
