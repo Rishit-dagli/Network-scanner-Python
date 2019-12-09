@@ -1,3 +1,20 @@
+'''
+TCPscan 1.0.0:
+
+A python code to demonstrate demonstrates a TCP scan built using Python 3.x
+Note: TCP scan is dangerous, so you are advised to not to use 
+     this script without permission
+'''
+
+__author__ = "Rishit Dagli"
+__copyright__ = ""
+__credits__ = ["Rishit Dagli"]
+__license__ = "Apache License 2.0"
+__version__ = "1.0.0"
+__maintainer__ = "Rishit Dagli"
+__email__ = "rishit.dagli@gmail.com"
+__status__ = "Development"
+
 import socket
 from datetime import datetime
 net = input("Enter the IP address: ")
@@ -26,6 +43,7 @@ def run1():
          print (addr , "is live")
          
 run1()
+
 t2 = datetime.now()
 total = t2 - t1
 print ("Scanning completed in: " , total)
